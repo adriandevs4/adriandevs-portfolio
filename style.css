@@ -1,0 +1,142 @@
+/* Body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #1f1f1f;
+}
+
+/* Navigation styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1f1f1f;
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #ff9900;
+}
+
+/* General section styling with black boxes */
+section {
+    background-color: #000; /* black background */
+    color: #fff;            /* white text */
+    border-radius: 10px;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Section headings and paragraphs */
+section h1, section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+section p, section ul {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+.projects-section h2 {
+    margin-bottom: 40px; /* space between heading and projects */
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* space between project items */
+}
+
+.projects-section .project-item {
+    flex: 0 0 300px; /* fixed width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111; /* slightly lighter black box for each project */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projects-section .project-item img {
+    width: auto;        /* keep natural width */
+    max-width: 100%;    /* never stretch beyond container */
+    height: auto;       /* keep aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* subtle highlight */
+}
+
+.projects-section .project-item h3,
+.projects-section .project-item p {
+    color: #fff;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-section a {
+    display: inline-block;
+    background-color: #fff; /* white button */
+    color: #000;            /* black text */
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-section a:hover {
+    background-color: #ff9900; /* hover color */
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        width: 80%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
