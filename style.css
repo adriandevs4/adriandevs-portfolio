@@ -1,4 +1,4 @@
-/* --- Base Styles --- */
+/* Base Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@ a {
     color: inherit;
 }
 
-/* --- Navigation --- */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -35,32 +35,34 @@ a {
     color: #aaa;
 }
 
-/* --- Sections --- */
+/* Sections */
 section {
     padding: 60px 20px;
 }
 
 .section-box {
-    border: 2px solid #333; /* grey box around each section */
+    border: 2px solid #333;
     padding: 20px;
     border-radius: 8px;
     max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* --- Skills Section --- */
-.skills-section ul {
-    list-style: disc;
-    padding-left: 20px;
-}
-
-/* --- Projects Section --- */
-.projects-section {
+    margin: 0 auto 40px auto;
     text-align: center;
 }
 
-.projects-title {
-    margin-bottom: 40px;
+/* Skills Section */
+.skills-section ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Projects Section */
+.projects-section-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .projects-container {
@@ -68,43 +70,40 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    margin-top: 20px;
 }
 
-.project-item {
-    background-color: #111; /* keep black background behind project boxes */
+.project-box {
+    background-color: #111;
     padding: 15px;
     border-radius: 8px;
-    width: 300px;
+    width: 280px;
     transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.project-item:hover {
+.project-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(255,255,255,0.2);
 }
 
 .project-img-box {
-    background-color: #333; /* lighter grey box around project images */
+    background-color: #555; /* lighter grey around image */
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
 }
 
-.project-item img {
+.project-img-box img {
     width: 100%;
     border-radius: 5px;
 }
 
-.project-item h3, .project-item p {
-    margin: 5px 0;
-}
-
-/* --- Contact Section --- */
-.contact-section {
-    text-align: center;
-    padding-bottom: 60px;
-}
-
+/* Contact */
 .contact-box {
     max-width: 500px;
     margin: 0 auto;
@@ -131,7 +130,7 @@ section {
     color: #fff;
 }
 
-/* --- Responsive --- */
+/* Responsive */
 @media screen and (max-width: 768px) {
     .projects-container {
         flex-direction: column;
