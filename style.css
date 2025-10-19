@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #000; /* full black background */
+    background-color: #000; /* black background */
     color: #fff;
 }
 
@@ -40,8 +40,18 @@ section {
     padding: 60px 20px;
 }
 
-.home-section, .about-section, .skills-section {
-    text-align: center;
+.section-box {
+    border: 2px solid #333; /* grey box around each section */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* --- Skills Section --- */
+.skills-section ul {
+    list-style: disc;
+    padding-left: 20px;
 }
 
 /* --- Projects Section --- */
@@ -61,8 +71,8 @@ section {
 }
 
 .project-item {
-    background-color: #222; /* lighter grey box for clickability */
-    padding: 20px;
+    background-color: #111; /* keep black background behind project boxes */
+    padding: 15px;
     border-radius: 8px;
     width: 300px;
     transition: transform 0.2s, box-shadow 0.2s;
@@ -73,10 +83,16 @@ section {
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
+.project-img-box {
+    background-color: #333; /* lighter grey box around project images */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 .project-item img {
     width: 100%;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 
 .project-item h3, .project-item p {
@@ -87,6 +103,11 @@ section {
 .contact-section {
     text-align: center;
     padding-bottom: 60px;
+}
+
+.contact-box {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .contact-links {
