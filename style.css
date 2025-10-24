@@ -49,17 +49,9 @@ section {
     text-align: center;
 }
 
-/* Skills Section - FIXED BOX */
+/* Skills Section */
 .skills-section {
-    border: 2px solid #333;    /* same as other sections */
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 1000px;         /* matches About / Welcome sections */
-    margin: 0 auto 40px auto;  /* centers the box */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* no additional styling needed; box handled by section-box */
 }
 
 .skills-section ul {
@@ -67,7 +59,8 @@ section {
     padding-left: 20px;
     margin: 0;
     text-align: left;
-    max-width: 400px;          /* keeps list from stretching too wide */
+    max-width: 400px; /* keeps list from stretching too wide */
+    margin: 0 auto;   /* center the list inside the box */
 }
 
 .skills-section ul li {
