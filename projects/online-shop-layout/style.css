@@ -34,15 +34,45 @@ section {
     padding: 60px 20px;
 }
 
-/* Product cards styling */
-.products {
+/* Section headings */
+section h1, section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1f1f1f;
+}
+
+/* Section text */
+section p, section ul {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Unordered lists for skills */
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* ✅ Shop Section */
+.shop-section {
+    text-align: center;
+}
+
+/* Center the product cards */
+.products-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    padding-bottom: 50px;
+    margin-top: 20px;
 }
 
+/* Product cards styling */
 .product-card {
     background-color: #fff;
     padding: 20px;
@@ -89,51 +119,7 @@ section {
 
 /* Shop title */
 .shop-title {
-    text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
     color: #1f1f1f;
-}
-
-/* Center all section content */
-section {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-/* Section headings */
-section h2, section h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #1f1f1f;
-}
-
-/* Section description / smaller text */
-section p, section ul {
-    font-size: 1.1em;       /* slightly bigger than normal */
-    font-weight: 500;       /* medium-bold for better readability */
-    margin-bottom: 20px;
-}
-
-/* Unordered lists for skills */
-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-section ul li {
-    margin-bottom: 10px;
-}
-
-/* ✅ Shop Section Fix */
-.shop-section {
-    text-align: center;
-}
-
-.shop-section .products {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 20px;
 }
