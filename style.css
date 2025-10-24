@@ -51,8 +51,12 @@ section {
 }
 
 /* Skills Section */
+.skills-section {
+    /* ONLY adjusted: box now matches other sections via .section-box wrapper */
+}
+
 .skills-section ul {
-    list-style-position: inside; /* makes bullets appear next to text */
+    list-style-position: inside; /* bullets next to text */
     padding-left: 0;
     margin: 0 auto;
     max-width: 400px;
@@ -60,7 +64,7 @@ section {
 }
 
 .skills-section ul li {
-    text-align: left; /* aligns bullets with text */
+    text-align: left;
     margin-bottom: 10px;
 }
 
