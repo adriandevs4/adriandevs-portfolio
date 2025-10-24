@@ -35,12 +35,7 @@ a {
     color: #aaa;
 }
 
-/* Sections */
-section {
-    padding: 60px 20px;
-}
-
-/* Section Box */
+/* Section Box Styling */
 .section-box {
     border: 2px solid #333;
     padding: 20px;
@@ -51,16 +46,13 @@ section {
 }
 
 /* Skills Section */
-.skills-section {
-    /* ONLY adjusted: box now matches other sections via .section-box wrapper */
-}
-
 .skills-section ul {
-    list-style-position: inside; /* bullets next to text */
-    padding-left: 0;
+    list-style: disc;
     margin: 0 auto;
+    padding: 0;
     max-width: 400px;
     text-align: left;
+    display: inline-block;
 }
 
 .skills-section ul li {
@@ -69,10 +61,8 @@ section {
 }
 
 /* Projects Section */
-.projects-section-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.projects-section {
+    text-align: center;
 }
 
 .projects-container {
@@ -92,20 +82,20 @@ section {
     flex-direction: column;
     align-items: center;
     transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #333;
 }
 
 .project-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
 .project-img-box {
-    background-color: #555;
+    background-color: #333;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
     width: 100%;
-    text-align: center;
 }
 
 .project-img-box img {
@@ -115,7 +105,17 @@ section {
 
 /* Contact Section */
 .contact-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contact-box {
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px 40px;
     text-align: center;
+    width: fit-content;
 }
 
 .contact-links {
