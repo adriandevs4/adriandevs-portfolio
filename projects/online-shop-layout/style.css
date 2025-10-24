@@ -1,3 +1,12 @@
+/* Body and global settings */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+
 /* Navigation styling */
 .navbar {
     display: flex;
@@ -31,7 +40,9 @@
 
 /* General section styling */
 section {
-    text-align: center; /* centers all sections */
+    max-width: 1200px;   /* prevent stretching on large screens */
+    margin: 0 auto;       /* centers the section container */
+    text-align: center;   /* centers text inside sections */
     padding: 60px 20px;
 }
 
@@ -116,6 +127,10 @@ section ul li {
     transition: 0.2s;
 }
 
+.product-card button:hover {
+    background-color: #333;
+}
+
 /* Mobile responsiveness for shop section */
 @media (max-width: 768px) {
     .products-wrapper {
@@ -125,10 +140,7 @@ section ul li {
     }
 
     .product-card {
-        width: 90%; /* make cards take most of the screen on small devices */
+        width: 90%;
         max-width: 300px;
     }
-}
-.product-card button:hover {
-    background-color: #333;
 }
