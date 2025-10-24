@@ -49,21 +49,25 @@ section {
     text-align: center;
 }
 
-/* Skills Section */
+/* Skills Section - FIXED */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers everything inside the section */
+}
+
 .skills-section ul {
     list-style: disc;
-    padding-left: 0;           
-    margin: 0 auto;            
-    display: flex;             
-    flex-direction: column;    
-    align-items: center;       
-    max-width: 400px;          
+    padding-left: 20px;        /* keeps bullets */
+    margin: 0;                 /* remove old auto/margin */
+    text-align: left;           /* keeps bullets properly aligned */
 }
 
 .skills-section ul li {
-    text-align: center;        
-    margin-bottom: 10px;       
+    text-align: center;        /* centers the text inside each list item */
+    margin-bottom: 10px;
 }
+
 /* Projects Section */
 .projects-section-box {
     display: flex;
