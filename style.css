@@ -144,3 +144,13 @@ section {
         align-items: center;
     }
 }
+
+.project-box a {
+    display: block;       /* make the link fill the project box */
+    color: inherit;       /* keep text color the same */
+    text-decoration: none; 
+}
+
+.project-box a:hover {
+    text-decoration: none; /* remove underline on hover */
+}
