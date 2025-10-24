@@ -49,7 +49,7 @@ section {
     text-align: center;
 }
 
-/* Skills Section - FIXED */
+/* Skills Section */
 .skills-section {
     display: flex;
     flex-direction: column;
@@ -61,6 +61,7 @@ section {
     padding-left: 20px;        /* keeps bullets */
     margin: 0;                 /* remove old auto/margin */
     text-align: left;           /* keeps bullets properly aligned */
+    max-width: 1000px;          /* updated: same width as other sections */
 }
 
 .skills-section ul li {
