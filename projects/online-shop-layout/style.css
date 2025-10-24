@@ -116,6 +116,19 @@ section ul li {
     transition: 0.2s;
 }
 
+/* Mobile responsiveness for shop section */
+@media (max-width: 768px) {
+    .products-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 90%; /* make cards take most of the screen on small devices */
+        max-width: 300px;
+    }
+}
 .product-card button:hover {
     background-color: #333;
 }
